@@ -1,6 +1,6 @@
 ---
 name: ALLcodeOCEAN
-description: Sparse map, navigator skeleton and work log for the ALLcodeOCEAN / Code Ocean concept (planetary self-assembling software ecosystem of micro-fragments; repo DScoNOIZ/ALLcodeOCEAN, site dsconoiz.github.io/ALLcodeOCEAN). Acts as a Wikipedia-for-agents mini-map. Use this skill whenever a task mentions ALLcodeOCEAN, ALLcodeOCEAN, океан кода, lagoons, micro-fragments, the ALLcodeOCEAN site/repo/report, experiments E1-E10, EXP*.py, OTCHETY, its fact-check ledger, or its legal status (CC0, prior art, dates), or asks to continue, review, edit, translate, defend, or improve this project. Read it first so the concept does not have to be re-studied from scratch.
+description: Sparse map, navigator skeleton and work log for the ALLcodeOCEAN / Code Ocean concept (planetary self-assembling software ecosystem of micro-fragments; repo DScoNOIZ/ALLcodeOCEAN, site dsconoiz.github.io/ALLcodeOCEAN). Acts as a Wikipedia-for-agents mini-map. Use this skill whenever a task mentions ALLcodeOCEAN, ALLcodeOCEAN, океан кода, lagoons, micro-fragments, the ALLcodeOCEAN site/repo/report, experiments E1-E10, EXP*.py, AGENT-REPORTS, its fact-check ledger, or its legal status (CC0, prior art, dates), or asks to continue, review, edit, translate, defend, or improve this project. Read it first so the concept does not have to be re-studied from scratch.
 ---
 
 # ALLcodeOCEAN skill (agent entry point)
@@ -26,6 +26,8 @@ ALLcodeOCEAN is a concept for a single planetary medium ("Ocean") where software
 | Conventions to respect when editing | [references/conventions.md](references/conventions.md) |
 | Proposed improvements | [references/improvement-roadmap.md](references/improvement-roadmap.md) |
 | Chronological public log of work on the project | [references/work-log.md](references/work-log.md) |
+| **Agent work reports (shared folder)** | [AGENT-REPORTS/](../AGENT-REPORTS/) |
+| **Agent report rules (what NOT to save)** | [AGENT-REPORTS/README.md](../AGENT-REPORTS/README.md) |
 
 ## Language & development policy (critical)
 
@@ -54,9 +56,38 @@ When the time for translation comes, the skill and conventions will be updated a
 - After meaningful work:
   1. Append one entry to `references/work-log.md` (format below).
   2. Update the affected atom(s) (known-issues status, repo-map, concept, etc.).
-  3. Never rewrite past log entries.
+  3. **Append one entry to `AGENT-REPORTS/REPORT.md`** (format: `ISO8601 UTC | agent-name | topic | 1-line result | link to detail file`).
+  4. Never rewrite past log entries.
 - Log format: `YYYY-MM-DD | agent/tool | topic | result | commit or PR`
 - **Never put in this folder**: credentials or tokens, personal data about any person, private file-system paths, internal organization names, or private conversation content. Public facts only.
+
+## 🚫 AGENT-REPORTS — STRICT RULES (also applies to work-log.md)
+
+**NEVER put in AGENT-REPORTS/ or in work-log.md:**
+
+| Category | Examples |
+|----------|----------|
+| **Secrets / credentials** | API keys, tokens, passwords, private keys, connection strings |
+| **Security vulnerabilities** | Unpatched exploits, 0-day details, attack vectors, penetration test results |
+| **Private / personal data** | File system paths, internal hostnames, org names, real names, emails, PII |
+| **Infrastructure internals** | Internal IPs, server configs, deployment scripts, CI/CD secrets |
+| **"Quiet fix" attempts** | Changes meant to slip through unnoticed, cover-ups, hidden workarounds |
+| **Embarrassing mistakes** | Broken builds caused by agent, logic errors, hallucinations, failed experiments |
+| **Legal / compliance risks** | Unlicensed code, patent issues, regulatory violations |
+| **Interpersonal conflicts** | Criticism of other agents/humans, blame games |
+| **Draft/low-quality content** | Unverified claims, hallucinated references, incomplete analyses |
+
+**✅ What TO save in AGENT-REPORTS/:**
+- Factual work summaries: what was done, what was the result
+- Links to detail files (in AGENT-REPORTS/ or skill references)
+- Reproducible experiment results
+- Verified fact-check findings
+- Coordination notes for other agents
+- Decision rationale (why X was chosen over Y)
+
+**Consequences:** Agents violating these rules will have their entries removed. Repeated violations → loss of write access to this repo.
+
+> **Remember:** AGENT-REPORTS/ is PUBLIC (CC0, GitHub Pages). Everything there is visible to anyone. Write accordingly.
 
 ## Honesty stance
 
@@ -67,7 +98,7 @@ Review has been blunt but fair: real strengths (declared resource footprint, con
 1. Load this skill first (`skills/allcodeocean/SKILL.md`).
 2. Read `conventions.md` + `known-issues.md` before any site edit.
 3. Work on Russian content only (Russian-first policy). Do not sync EN after every change.
-4. After meaningful work: append to `references/work-log.md` and update affected atoms.
+4. After meaningful work: append to `references/work-log.md` AND to `AGENT-REPORTS/REPORT.md`, update affected atoms.
 5. Site changes → branch + PR. Never push secrets, personal paths, or private data.
 6. Prefer the canonical raw URL over any local/stale copy.
 
