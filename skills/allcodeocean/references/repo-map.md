@@ -1,6 +1,6 @@
 # Repo map: github.com/DScoNOIZ/ALLcodeOCEAN (public, default branch `main`)
 
-Live site: https://dsconoiz.github.io/microcean/ (static HTML5, no build, no JS deps; primary language Russian, EN mirror).
+Live site: https://dsconoiz.github.io/ALLcodeOCEAN/ (static HTML5, no build, no JS deps; primary language Russian, EN mirror).
 
 | Path | What |
 |---|---|

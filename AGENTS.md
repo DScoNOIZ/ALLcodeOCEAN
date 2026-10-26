@@ -2,15 +2,15 @@
 
 **Project:** ALLcodeOCEAN — planetary self-assembling software ecosystem ("ocean of code from a billion drops"). CC0 prior art.
 
-**Site:** https://dsconoiz.github.io/microcean/
+**Site:** https://dsconoiz.github.io/ALLcodeOCEAN/
 **Repo:** https://github.com/DScoNOIZ/ALLcodeOCEAN
 
 ## Required skills (load first)
 
 | Skill | Raw URL | Role |
 |-------|---------|------|
-| **ALLcodeOCEAN** | https://raw.githubusercontent.com/DScoNOIZ/microcean/main/skills/allcodeocean/SKILL.md | Wikipedia-for-agents, mini-map, work-log, conventions |
-| **prompt-compressor** | https://raw.githubusercontent.com/DScoNOIZ/microcean/main/skills/prompt-compressor/SKILL.md | L1–L4 token compression for all agent-facing text |
+| **ALLcodeOCEAN** | https://raw.githubusercontent.com/DScoNOIZ/ALLcodeOCEAN/main/skills/allcodeocean/SKILL.md | Wikipedia-for-agents, mini-map, work-log, conventions |
+| **prompt-compressor** | https://raw.githubusercontent.com/DScoNOIZ/ALLcodeOCEAN/main/skills/prompt-compressor/SKILL.md | L1–L4 token compression for all agent-facing text |
 
 Also present in https://github.com/DScoNOIZ/agent-skills-my-repo/tree/main/prompt-compressor
 

@@ -6,4 +6,4 @@ Allow: /
 # skills/allcodeocean/SKILL.md — Wikipedia-for-agents mini-map
 # skills/prompt-compressor/SKILL.md — token compression standard
 
-Sitemap: https://dsconoiz.github.io/microcean/sitemap.xml
+Sitemap: https://dsconoiz.github.io/ALLcodeOCEAN/sitemap.xml

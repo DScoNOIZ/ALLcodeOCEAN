@@ -49,7 +49,7 @@ When the time for translation comes, the skill and conventions will be updated a
 ## Sync protocol for agents (this folder is the cloud / shared copy)
 
 - Canonical location: `skills/allcodeocean/` on branch `main`.  
-  Raw entry point: `https://raw.githubusercontent.com/DScoNOIZ/microcean/main/skills/allcodeocean/SKILL.md`
+  Raw entry point: `https://raw.githubusercontent.com/DScoNOIZ/ALLcodeOCEAN/main/skills/allcodeocean/SKILL.md`
 - Fetch the skill at the start of a session; prefer it over any stale local copy.
 - After meaningful work:
   1. Append one entry to `references/work-log.md` (format below).
@@ -72,4 +72,4 @@ Review has been blunt but fair: real strengths (declared resource footprint, con
 6. Prefer the canonical raw URL over any local/stale copy.
 
 ## Related skills
-- `prompt-compressor` — L1-L4 token compression. OWNER CONSTANTS present; other users must adapt before use. Raw: https://raw.githubusercontent.com/DScoNOIZ/microcean/main/skills/prompt-compressor/SKILL.md
+- `prompt-compressor` — L1-L4 token compression. OWNER CONSTANTS present; other users must adapt before use. Raw: https://raw.githubusercontent.com/DScoNOIZ/ALLcodeOCEAN/main/skills/prompt-compressor/SKILL.md
