@@ -1,0 +1,9 @@
+User-agent: *
+Allow: /
+
+# Agent entry points (AI agents, crawlers, skill loaders)
+# AGENTS.md — project rules + skill index
+# skills/allcodeocean/SKILL.md — Wikipedia-for-agents mini-map
+# skills/prompt-compressor/SKILL.md — token compression standard
+
+Sitemap: https://dsconoiz.github.io/microcean/sitemap.xml
