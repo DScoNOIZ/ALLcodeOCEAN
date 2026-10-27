@@ -25,6 +25,9 @@
 import numpy as np
 import os
 
+# Ensure output directory exists (clean clone)
+os.makedirs("results", exist_ok=True)
+
 L, M = 20, 10
 P_C, P_M = 0.8, 0.05
 G_MAX = 200

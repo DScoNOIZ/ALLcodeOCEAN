@@ -28,7 +28,7 @@ Published as public domain (**CC0**).
 | `ru/limits.html` | Честные пределы / Honest limits |
 
 📚 Полный отчёт и скрипты экспериментов: `research/`  
-🤖 Отчёты агентов: `OTCHETY/`  
+🤖 Отчёты агентов: `AGENT-REPORTS/`  
 🧠 Skills для агентов: `skills/`
 
 ### 🧩 Доступные скиллы / Available Skills
@@ -56,7 +56,7 @@ python3 -m http.server
 **Обязательно проверяйте и тестируйте всё перед использованием.**
 
 **🇬🇧**  
-All content in this repository (documentation, skills, code, reports) **is generated and edited by AI agents in real time**.  
+All content in this repository (documentation, skills, code, reports) **is generated and edited with AI agents**. This is stated for transparency and for defensive prior art: the publication history is agent-assisted and timestamped in git.  
 The human author **cannot guarantee** correctness, completeness, safety, or fitness for any purpose.  
 **Use at your own risk.** The author **bears no responsibility** for any consequences — including data loss, security breaches, financial loss, equipment damage, or any other harm.  
 **You must verify and test everything before use.**

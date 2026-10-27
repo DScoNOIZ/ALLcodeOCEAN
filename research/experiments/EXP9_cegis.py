@@ -29,6 +29,9 @@ CEGIS-цикл (перебор, без SMT):
 import time
 import os
 
+# Ensure output directory exists (clean clone)
+os.makedirs("results", exist_ok=True)
+
 D_MAX = 3
 CAP_CAND = 300000
 MAX_ITER = 30

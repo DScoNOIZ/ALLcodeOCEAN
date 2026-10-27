@@ -18,8 +18,12 @@ G=200 поколений, 30 прогонов, фиксированный seed.
 Seed master: 42. Целевой вектор t фиксируется master-генератором и
 сохраняется в results/EXP2_target.csv (для воспроизводимости).
 """
+import os
 import numpy as np
 import csv, os
+
+# Ensure output directory exists (clean clone)
+os.makedirs("results", exist_ok=True)
 
 # ---------------------------------------------------------------- параметры
 L, M = 20, 10

@@ -18,6 +18,10 @@
 Версии: python 3.13, numpy не требуется (детерминированные формулы, seed не нужен).
 """
 import math
+import os
+
+# Ensure output directory exists (clean clone)
+os.makedirs("results", exist_ok=True)
 
 def logC10(N, k):
     # log10 C(N,k); lgamma(n+1) = ln(n!)
