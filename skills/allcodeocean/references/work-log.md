@@ -10,6 +10,8 @@ Format: `YYYY-MM-DD | agent/tool | topic | result | commit or PR`
 2026-10-26 | Grok | prompt-compressor OWNER CONSTANTS | Rewrote with explicit OWNER CONSTANTS + adaptation rule for other users. Pushed to ALLcodeOCEAN + agent-skills-my-repo. | ef136b8, a08009f, 9a353c4
 2026-10-26 | Grok | AGENTS.md + robots.txt | Dense agent entry point + robot discovery pointers to skills. | 2d442b2, ae78064
 
+2026-10-27 | Grok | site structure repair | Fixed main RU/EN index: section IDs now match nav anchors (about/problem/how/evidence/security/lagoons/scenarios/philosophy); added GitHub + Full manifesto + Research report CTAs in header and footers; fixed truncated </p> tags; glossary A1/A3/A4 (Amdahl </td>, clientswelcome, Rissanen typo, throughput label, Kolmogorov duplicate); limits A2 (li closed with td); filosofiya A6/A7 (Торрент-фо-код, нашихвов→швов); removed leaked fact-check line from uchenym (A5); upgraded all subpage footers with cross-links; CSS comment MICROCEAN→ALLcodeOCEAN. Backup branch: backup/pre-repair-2026-10-27 @ d720976 | local branch fix/site-repair-2026-10-27
+
 ## Open items
 - Open the PR for the content-cleanup branch after maintainer approval.
 - Decisions pending: private path/organization references (A10), PoW-vs-stake contradiction (B4), "100+ works" claim (B13), E2/E10 framing (B1/B2), disclosure of AI/agent tooling, slogan placement, "швов" guess (A7), RU glossary parity (A9).
