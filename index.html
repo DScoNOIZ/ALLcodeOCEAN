@@ -38,8 +38,14 @@
       <a href="#philosophy">Философия</a>
       <a href="ru/limits.html">Границы и риски</a>
       <a href="ru/glossary.html">Глоссарий</a>
+      <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener">GitHub</a>
       <a href="en/index.html">EN</a>
     </nav>
+    <p class="cta-row" style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+      <a class="cta-btn" href="ru/uchenym.html" style="display:inline-block;padding:10px 20px;border-radius:10px;background:linear-gradient(135deg,#38bdf8,#2dd4bf);color:#0a1622;font-weight:700;text-decoration:none;">📖 Полный манифест (для учёных)</a>
+      <a class="cta-btn" href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/research/report.md" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">📄 Research report</a>
+      <a class="cta-btn" href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">🐙 Репозиторий</a>
+    </p>
   </div>
 </header>
 
@@ -98,6 +104,9 @@
 
   <p><strong>Вы не «собираете программу». Вы набираете воду.</strong> Ровно столько, сколько нужно. Ровно того состава, который нужен.</p>
 
+  </section>
+
+<section id="problem">
   <h2>Почему современный интернет и стек разработки — тупик для Искусственного Интеллекта, для Сильного Искусственного Интеллекта, для Сверхинтеллекта</h2>
   <p>Сейчас ИИ программирует так: он гуглит, качает репозитории, читает README, угадывает API, пробует запустить, ловит ошибки, исправляет, снова гуглит. Это <strong>эмуляция человека</strong>. А не нативная работа.</p>
 
@@ -129,12 +138,17 @@
   <p><strong>Обмен знаниями</strong> — семантический поиск по смыслу, мгновенный доступ к мировому опыту.</p>
   <p><strong>Эволюция решений</strong> — автоматический отбор: мутация, скрещивание, выбор лучших по пригодности (fitness = правильность + стоимость + совместимость).</p>
   <p><strong>Тестирование и проверка</strong> — непрерывная верификация, фаззинг, формальные доказательства — встроено в рой агентов.</p>
-  <p><strong>Эволюция архитектуры</strong> — автоматический рефакторинг, извлечение паттернов, адаптация под новые требования.</  <p><strong>Оптимизация ресурсов</strong> — декларация стоимости до запуска, автоматическая оптимизация под память, процессор, энергию.</p>
+  <p><strong>Эволюция архитектуры</strong> — автоматический рефакторинг, извлечение паттернов, адаптация под новые требования.</p>
+  <p><strong>Оптимизация ресурсов</strong> — декларация стоимости до запуска, автоматическая оптимизация под память, процессор, энергию.</p>
   <p><strong>Безопасность и иммунитет</strong> — нет монокультуры, мгновенная реакция на угрозы, изоляция проблемных участков.</p>
   <p><strong>Приватность</strong> — лагуны — свои водоёмы с правилами, ничего не утекает наружу без разрешения.</p>
   <p><strong>Коллективное обучение</strong> — агенты делятся опытом через общую среду, передают паттерны, веса, решения.</p>
-  <p><strong>Автономная работа</strong> — самостоятельный деплой, мониторинг, самоисцеление, масштабирование.</  <p><strong>ALLcodeOCEAN даёт всё это нативно:</strong> единую семантическую среду, CEGIS-цикл в рое, Kademlia DHT + семантические теги, генетический алгоритм над фрагментами, рой микросетей-верификаторов, Kademlia DHT + Gossip + CRDT, лагуны для приватности, общий Океан фрагментов с репутацией на графе цитирований, P2P-инфраструктуру с Gossip/CRDT и автономными оркестраторами.</p>
+  <p><strong>Автономная работа</strong> — самостоятельный деплой, мониторинг, самоисцеление, масштабирование.</p>
+  <p><strong>ALLcodeOCEAN даёт всё это нативно:</strong> единую семантическую среду, CEGIS-цикл в рое, Kademlia DHT + семантические теги, генетический алгоритм над фрагментами, рой микросетей-верификаторов, Kademlia DHT + Gossip + CRDT, лагуны для приватности, общий Океан фрагментов с репутацией на графе цитирований, P2P-инфраструктуру с Gossip/CRDT и автономными оркестраторами.</p>
 
+  </section>
+
+<section id="how">
   <h2>Семь принципов Океана</h2>
 
   <p><strong>1. Микро-фрагменты — кирпичи жизни.</strong> Каждый кусочек кода знает о себе всё: интерфейс, контракты, тесты, бенчмарки, репутацию. Крупные системы — это не монолиты, а «киты», которые можно взять целиком.</p>
@@ -145,9 +159,9 @@
 
   <p><strong>4. Одноранговая сеть.</strong> Никаких главных серверов. Распределённая адресная книга (Kademlia DHT) — поиск за логарифмическое время. Рассылка новостей (gossip) — все узнают за секунды. Синхронизация без координатора (CRDT).</p>
 
-  <p><strong>5. Доверие без блокчейна.</strong> Консенсус через PBFT/Raft. Репутация — через пройденные тесты и реальные бенчмарки. Защита от фейков (Sybil) — через экономические ставки при входе.</p>
+  <p id="security"><strong>5. Доверие без блокчейна.</strong> Консенсус через PBFT/Raft. Репутация — через пройденные тесты и реальные бенчмарки. Защита от фейков (Sybil) — через экономические ставки при входе.</p>
 
-  <p><strong>6. Два режима: Океан и Лагуны.</strong> Открытый Океан — для всех. Лагуны — закрытые водоёмы для компаний, госсектора, секретных проектов. Свои правила, свои фрагменты, ноль утечек. Мосты — для селективного обмена. Можно скопировать ручей из Океана в свою Лагуну и доработать.</p>
+  <p id="lagoons"><strong>6. Два режима: Океан и Лагуны.</strong> Открытый Океан — для всех. Лагуны — закрытые водоёмы для компаний, госсектора, секретных проектов. Свои правила, свои фрагменты, ноль утечек. Мосты — для селективного обмена. Можно скопировать ручей из Океана в свою Лагуну и доработать.</p>
 
   <p><strong>7. Ресурсная ответственность — закон физики.</strong> Каждая сборка заранее объявляет: сколько весит, сколько ест памяти, процессора, трафика, энергии. «Ноль лишнего» — не идеал, а норма. Тесты эффективности равны тестам правильности. MDL-давление высекает расточительные решения автоматически.</p>
 
@@ -207,6 +221,9 @@
 
   <hr>
 
+  </section>
+
+<section id="evidence">
   <h2>Почему один кусочек кода может сломать весь мир</h2>
 
   <p>Представьте: вы строите небоскрёб. Вместо того чтобы лить бетон и варить сталь сами, вы заказываете <strong>готовые блоки</strong> у тысяч разных поставщиков. Один привез стены, другой — окна, третий — лифты, четвёртый — трубы. Вы просто собираете их как конструктор.</p>
@@ -232,6 +249,9 @@
 
   <hr>
 
+  </section>
+
+<section id="scenarios">
   <h2>Сценарии: как меняется жизнь</h2>
 
   <p><strong>Школьник:</strong> «Хочу игру про ракету» — Океан собирает игру.<br>
@@ -245,6 +265,9 @@
 
   <hr>
 
+  </section>
+
+<section id="philosophy">
   <h2>Правовое положение: идея принадлежит миру</h2>
 
   <p>ALLcodeOCEAN опубликована открыто <strong>2026-10-26</strong> в репозитории GitHub — история коммитов служит доказательством даты. Раскрытое становится <strong>defensive prior art</strong> — никто не сможет запатентовать это. Лицензия <strong>CC0 1.0 Universal</strong> — всёобщее достояние. Авторство (ст. 1265, 1267 ГК РФ) остаётся у автора. Автор не оператор, не бенефициар, не учредитель. Открытость вместо монополии.</p>
@@ -283,8 +306,26 @@
   <div class="container">
     <div class="slogan">«Океан всего кода из миллиарда капель»</div>
     <div>ALLcodeOCEAN · концепция публикуется открыто · заявлено как всеобщее достояние (CC0) · 2026</div>
-    <div style="margin-top:.6rem;font-size:.85rem;opacity:.7"><a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/AGENTS.md">AGENTS.md</a> · <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/tree/main/skills">skills</a></div>
-  </div></footer>
+    <p style="margin-top:10px;">
+      <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener">GitHub</a>
+      &nbsp;·&nbsp;
+      <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/research/report.md" target="_blank" rel="noopener">Research report</a>
+      &nbsp;·&nbsp;
+      <a href="ru/uchenym.html">Полный манифест</a>
+      &nbsp;·&nbsp;
+      <a href="ru/filosofiya.html">Философия</a>
+      &nbsp;·&nbsp;
+      <a href="ru/limits.html">Границы</a>
+      &nbsp;·&nbsp;
+      <a href="en/index.html">English</a>
+    </p>
+    <div style="margin-top:.6rem;font-size:.85rem;opacity:.7">
+      <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/AGENTS.md">AGENTS.md</a>
+      · <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/tree/main/skills">skills</a>
+      · <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/tree/main/AGENT-REPORTS">AGENT-REPORTS</a>
+    </div>
+  </div>
+</footer>
 
 <script>
   const io = new IntersectionObserver(entries => {
