@@ -25,9 +25,19 @@
 
 <header class="site">
   <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">← To the home page</a> · Glossary · <a href="../ru/glossary.html">RU</a></nav>
-    <a class="logo" href="index.html">ALLcodeOCEAN</a>
-    <div class="logo-sub">One ocean from a billion drops</div>
+    <h1 class="logo-h"><a class="logo" href="index.html">ALLcodeOCEAN</a></h1>
+    <div class="logo-sub">Ocean of All Code from a Billion Drops</div>
+    <nav class="main-nav" aria-label="Site sections">
+      <a href="index.html">Manifesto</a>
+      <a href="for-everyone.html">For Everyone</a>
+      <a href="specialists.html">For Specialists</a>
+      <a href="scientists.html">For Scientists</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="limits.html">Limits</a>
+      <a href="glossary.html" class="active" aria-current="page">Glossary</a>
+      <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html">RU</a>
+    </nav>
   </div>
 </header>
 
@@ -35,155 +45,140 @@
 
 <section id="glossary">
   <h1 class="section-title">ALLcodeOCEAN Glossary</h1>
-  <p>Key terms of the concept in alphabetical order. Anglicisms kept in English where standard in the profession.</p>
+  <p>Key terms of the concept in alphabetical order. Terms that are standard in English in the profession are kept as is.</p>
 
   <dl class="glossary">
     <dt>Agent</dt>
     <dd>An autonomous software executor solving a narrow task (fragment assessment, conflict finding, assembly). In ALLcodeOCEAN, assembly is performed by a swarm of narrow agents, not one universal AI.</dd>
 
     <dt>Amdahl's Law</dt>
-    <dd>Parallelism bounded by the sequential coordination fraction. E8: at p=0.99 the speedup ceiling on 1024 cores = 91.2× (limit 100×).</dd>
+    <dd>Parallelism is limited by the sequential share of coordination. E8: at p=0.99 the speedup ceiling on 1024 cores is 91.2× (limit 100×).</dd>
 
-    <dt>Anchor References (ref, multi_ref, transform)</dt>
-    <dd>References to fragments inside an assembly. Allow an agent to point to a ready piece instead of regenerating it.</dd>
+    <dt>Anchors (Anchor References)</dt>
+    <dd>References to fragments inside an assembly (ref, multi_ref, transform). They let an agent point to a ready piece instead of regenerating it.</dd>
 
     <dt>Archipelago</dt>
-    <dd>Metaphor for today's software landscape: scattered islands (repositories, packages, IDEs, CI/CD) weakly connected by bridges. ALLcodeOCEAN proposes the Ocean — continuous water instead of an archipelago.</dd>
+    <dd>A metaphor for today's software landscape: scattered islands (repositories, packages, IDEs, CI/CD) loosely connected by bridges. ALLcodeOCEAN proposes an Ocean — continuous water instead of an archipelago.</dd>
 
     <dt>Assembly</dt>
-    <dd>A subset of fragments S ⊆ ℱ with a composition operation ∘ gluing them into a program p. Goal: argmin Φ(S) = α·Err + β·cost + γ·incomp.</dd>
+    <dd>A subset of fragments S ⊆ ℱ with a composition operation ∘ that glues them into a program p. Goal: argmin Φ(S) = α·Err + β·cost + γ·incomp.</dd>
 
     <dt>Bridge</dt>
-    <dd>Selective exchange between a lagoon and the open Ocean under the lagoon owner's rules: something is imported, something never leaves the circuit.</dd>
+    <dd>Selective exchange between a lagoon and the open Ocean under the lagoon owner's rules: some things are imported, some never leave the perimeter.</dd>
 
     <dt>Cambrian Explosion</dt>
-    <dd>Metaphor: as in the ocean of life — sudden diversity of forms. In the Code Ocean — when fragments begin to combine freely, an explosive number of new programs is born.</dd>
+    <dd>A metaphor: as in the ocean of life, a sudden diversity of forms. In the Ocean of code — once fragments begin to combine freely, an explosive number of new programs is born.</dd>
 
-    <dt>CEGIS / Counterexample-Guided Inductive Synthesis</dt>
-    <dd>SyGuS framework (Alur et al. 2013). Synthesizer–verifier loop: soundness proven; termination at finite grammar proven; completeness unattainable in general.</dd>
+    <dt>CEGIS (Synthesis from Specification)</dt>
+    <dd>Counterexample-Guided Inductive Synthesis (SyGuS, Alur et al. 2013). A "synthesizer–verifier" loop: soundness is proven; termination with a finite grammar is proven; completeness in the general case is unattainable.</dd>
 
     <dt>Client</dt>
-    <dd>A program connecting to the Ocean protocol. Multiple clients welcome; no vendor lock-in, no API keys at the protocol level.</dd>
+    <dd>A program that connects to the Ocean protocol. Many clients are welcome; there is no vendor lock-in and no API keys at the protocol level.</dd>
 
     <dt>Compromise</dt>
-    <dd>Attack on a fragment. In the Ocean: no monoculture — compromise of one fragment does not destroy the system; word of the threat spreads via currents.</dd>
+    <dd>An attack on a fragment. In the Ocean there is no monoculture — compromising one fragment does not bring down the system; word of the threat spreads along the currents.</dd>
 
     <dt>Coordination</dt>
-    <dd>The sequential part of assembly setting the parallelism ceiling via Amdahl's law. Top-level swarm management.</dd>
+    <dd>The sequential part of assembly that sets the parallelism ceiling under Amdahl's law. The top level of swarm control.</dd>
 
-    <dt>CRDT / Conflict-free Replicated Data Type</dt>
-    <dd>Join-semilattice = commutative idempotent monoid → eventual consistency. Used for fragment registry state and queue-of-rights (ORSet for multi-author). E7: 10000/10000 checks passed.</dd>
+    <dt>Currents (Flows)</dt>
+    <dd>The movement of fragments between participants. A P2P layer on Kademlia (O(log n) lookup) + gossip push-pull (O(log n) update propagation).</dd>
 
-    <dt>Currents</dt>
-    <dd>Movement of fragments between participants. P2P layer on Kademlia (O(log n) lookup) + Gossip push-pull (O(log n) update propagation).</dd>
+    <dt>Defensive Prior Art (Priority)</dt>
+    <dd>Publishing the concept (2026-10-26) creates prior art: no one can patent what is disclosed. CC0 1.0 Universal + Art. 1265/1267 of the Russian Civil Code (inalienable authorship).</dd>
 
-    <dt>Defensive Prior Art</dt>
-    <dd>Publication of the concept (2026-10-26) creates prior art: no one can patent what is disclosed. CC0 1.0 Universal + RF Civil Code Art.1265/1267 (inalienable authorship).</dd>
+    <dt>Ecosystem Fork</dt>
+    <dd>Carrying a suitable open system whole into your own lagoon to adapt it to your tasks. Like diverting a stream into your own pond.</dd>
 
     <dt>Ecosystems</dt>
-    <dd>Metaphor for full stacks: constellations of islands (packages/apps) living in symbiosis. Large life form in the Ocean.</dd>
+    <dd>A metaphor for full stacks: a set of islands (packages/applications) living in symbiosis. A large form of life in the Ocean.</dd>
 
     <dt>Epistasis</dt>
-    <dd>Interaction between fragments. λ ≤ 0.3 → correctness 1.0; λ = 0.7 → 0.325 (E3). "Clean interfaces" requirement is the architectural answer.</dd>
+    <dd>Interaction between fragments. λ ≤ 0.3 → correctness 1.0; λ = 0.7 → 0.325 (E3). The "clean interfaces" requirement is the architectural answer.</dd>
 
     <dt>Evolution / Evolutionary Selection</dt>
-    <dd>Assembly variants compete; best combinations preserved and developed — by evolutionary biology and genetic algorithm principles. Elitism + restarts mitigate lack of convergence guarantee.</dd>
-
-    <dt>Fragment (Micro-fragment)</dt>
-    <dd>The basic unit of code — a small fragment (function, algorithm) with interface, pre/post-conditions, hash, reputation, semantic tags, measured performance profile. Not a large package.</dd>
-
-    <dt>Garbage Flood (Fragment Garbage)</dt>
-    <dd>Risk: Ocean fills with millions of low-quality/duplicate/malicious fragments; search slows, reputation dilutes. Mitigation: economic stake on publication, MDL auto-eviction, lagoon filters, citation graph weight.</dd>
-
-    <dt>GDC Sizing (Goldberg–Deb–Clark)</dt>
-    <dd>N_s = 2cκσ²_M/d². At σ_M/d=4: theoretical 173.19 (κ=2, c=z²≈2.71); empirical N* = 50–100 (factor 1.7–3.5). Elitism on true fitness explains gap.</dd>
-
-    <dt>Gossip Protocol</dt>
-    <dd>Epidemic dissemination; eventual consistency. Fragment update propagation; reputation gossip. Karp et al. 2000; E6: n=10⁵ → 11.37 ± 0.48 rounds.</dd>
+    <dd>Assembly variants compete; the best combinations are kept and developed — following the principles of evolutionary biology and genetic algorithms. Elitism + restarts mitigate the lack of a convergence guarantee.</dd>
 
     <dt>Granularity / No Rigid Gradation</dt>
-    <dd>Plankton (micro-fragments) → schools of fish (functions/modules) → islands (packages/apps) → ecosystems (stacks). No sharp boundaries — take exactly what you need: drops, a school, an island.</dd>
+    <dd>Plankton (micro-fragments) → schools of fish (functions/modules) → islands (packages/applications) → ecosystems (stacks). There are no sharp boundaries — you take exactly what you need: drops, a school, an island.</dd>
 
-    <dt>Halting Problem / Rice's Theorem</dt>
-    <dd>Absolute error-freeness unattainable. Attainable: tests on finite sets and verification of bounded properties (CEGIS soundness).</dd>
-
-    <dt>Kademlia DHT</dt>
-    <dd>XOR-metric distributed hash table; O(log n) lookup. Fragment discovery in ALLcodeOCEAN's P2P layer. E5: n=10⁹ → mean 5.42 ± 0.83 hops, max 8.</dd>
+    <dt>Knowledge Currents</dt>
+    <dd>A solution found on one shore reaches another. Practices and patterns spread epidemically (gossip).</dd>
 
     <dt>Kolmogorov Complexity K(x)</dt>
-    <dd>Minimal program length producing x. Uncomputable (Solomonoff 1964; Li & Vitányi 2008). "Zero excess" is an MDL heuristic, not a mathematical optimum.</dd>
+    <dd>The minimal length of a program that produces x. Uncomputable. "Zero excess" is a heuristic via MDL, not a mathematical optimum.</dd>
 
     <dt>Lagoon</dt>
-    <dd>Closed circuit of an organization/state: its own fragments, its own history, zero leaks. Self-sufficient but poorer without external inflow. Selective exchange (bridge) and ecosystem fork possible.</dd>
+    <dd>A closed perimeter of an organization or state: its own fragments, its own history, zero leaks. Self-sufficient, but poorer without inflow from outside. Selective exchange (a bridge) and an ecosystem fork are possible.</dd>
 
     <dt>Legal Standing</dt>
-    <dd>CC0 1.0 Universal; inalienable authorship (RF Civil Code Art.1265/1267); defensive prior art; author not operator/not beneficiary/not founder; triple timestamping (DOI/OTS/notary) in preparation.</dd>
+    <dd>CC0 1.0 Universal; inalienable authorship (Art. 1265/1267 of the Russian Civil Code); defensive prior art; the author is not an operator, beneficiary or founder; triple dating (DOI/OTS/notary) — in preparation.</dd>
 
-    <dt>Library/Package</dt>
-    <dd>"Large inhabitants" of the Ocean — whales and coral reefs. Mature forms refined by evolution; used whole, copied, tamed. But the foundation of all life is the plankton of micro-fragments.</dd>
+    <dt>Libraries/Packages</dt>
+    <dd>The Ocean's "large inhabitants" — whales and coral reefs. Mature forms honed by evolution; used whole, copied, tamed. But the foundation of life is the plankton of micro-fragments.</dd>
 
-    <dt>Lookup / Kademlia Probe</dt>
-    <dd>Finding a fragment in a network of 10⁹ nodes: mean 5.42 ± 0.83 hops (E5), max 8. Upper bound ceil log₂ n = 30.</dd>
+    <dt>Lookup (Kademlia)</dt>
+    <dd>Finding a fragment in a network of 10⁹ nodes: on average 5.42 ± 0.83 hops (E5), maximum 8. Upper bound ceil log₂ n = 30.</dd>
+
+    <dt>Mathematical Apparatus / Navigation</dt>
+    <dd>The formal model (ℱ, assembly, objective function Φ), theorems (Holland's schema theorem, the Price equation, GDC sizing, NFL, Amdahl, Rice), experiments E1–E10 with seed=42.</dd>
 
     <dt>MDL / Minimum Description Length</dt>
-    <dd>Rissanen 1978: L(D) = min_H [L(H) + L(D|H)] — formalization of Occam's razor. In ALLcodeOCEAN: size penalty in objective; E10: assembly 2.5× shorter at correctness 1.0.</dd>
+    <dd>Rissanen's principle (1978): L(D) = min_H [L(H) + L(D|H)] — a formalization of Occam's razor. In ALLcodeOCEAN: a penalty on assembly size in the objective function; E10: an assembly 2.5× shorter at correctness 1.0.</dd>
 
-    <dt>No Free Lunch (Wolpert & Macready 1997)</dt>
-    <dd>No universal optimizer for all tasks. ALLcodeOCEAN's strength is on the class of tasks with structure (low epistasis, clean interfaces).</dd>
+    <dt>Micro-fragment</dt>
+    <dd>The basic unit of code — a small fragment (function, algorithm) with an interface, pre-/postconditions, a hash, reputation, semantic tags and a measured performance profile. Not a large package.</dd>
 
     <dt>Objective Function Φ</dt>
-    <dd>Φ(S) = α·Err(S, Spec) + β·cost(p(S)) + γ·incomp(S). α ≫ β, γ. cost = complete resource footprint: size, time, memory, traffic, energy.</dd>
+    <dd>Φ(S) = α·Err(S, Spec) + β·cost(p(S)) + γ·incomp(S). α ≫ β, γ. cost = the full resource footprint: size, time, memory, traffic, energy.</dd>
 
     <dt>Ocean</dt>
-    <dd>Single environment where all planetary software lives: code, history, practices. Exchange, work, storage, passing on — neighboring areas of one sea. Not an archipelago.</dd>
+    <dd>A single environment in which all the planet's software lives: code, history, practices. Exchange, work, storage, transfer — neighboring areas of one sea. Not an archipelago.</dd>
 
     <dt>Plankton</dt>
-    <dd>Metaphor for micro-fragments: tiniest, most numerous, foundation of the Ocean's entire food chain. From a billion drops — one water.</dd>
+    <dd>A metaphor for micro-fragments: the smallest, most numerous, the foundation of the Ocean's whole food chain. From a billion drops — one water.</dd>
 
-    <dt>Queue-of-Rights</dt>
-    <dd>Immutable rights history on fragment in CRDT (ORSet for multi-author). Operational transformation on conflicts. Queue-of-rights = law in code.</dd>
+    <dt>Queue-of-Rights (Smart Contract)</dt>
+    <dd>An immutable history of rights to a fragment in a CRDT (ORSet for multi-authorship). Operational transformation on conflicts. Queue-of-rights = law in code.</dd>
 
     <dt>Reputation</dt>
-    <dd>History of passed executable tests + resource profile. Fragment reputation accrues on citation graph; author reputation through fragment quality.</dd>
-
-    <dt>Schema Theorem (Holland) ≠ GA Convergence Guarantee</dt>
-    <dd>Expectation of schema growth ≠ dynamics equation. Evolutionary search may stall; elitism and restarts mitigate but do not eliminate.</dd>
+    <dd>A history of passed executable tests + a resource profile. A fragment's reputation accumulates on the citation graph; an author's reputation comes through the quality of their fragments.</dd>
 
     <dt>Schools of Fish</dt>
-    <dd>Metaphor for functions/modules: groups of fragments working in concert. More plankton, fewer islands.</dd>
+    <dd>A metaphor for functions/modules: groups of fragments working in concert. More plankton, fewer islands.</dd>
 
     <dt>Stake</dt>
-    <dd>Economic bond on fragment correctness at publication. Sybil and garbage-flood protection. Slashed on detected maliciousness.</dd>
+    <dd>An economic stake on a fragment's correctness at publication. Protection against Sybil attacks and fragment garbage. Burned when maliciousness is detected.</dd>
 
-    <dt>Sybil Attack / Sybil Resistance</dt>
-    <dd>Douceur 2002: impossible without external identity. ALLcodeOCEAN: economic stake at ocean entry + reputation on fragment citation graph, not on nodes.</dd>
+    <dt>Strains</dt>
+    <dd>Variants of one fragment with different optimizations/fixes. Evolutionary selection picks the best strains.</dd>
 
     <dt>Swarm</dt>
-    <dd>Multitude of narrow specialized executors (neural and algorithmic). Each solves one task. High-class models requested pointwise — where semantic understanding is needed.</dd>
+    <dd>A multitude of narrow specialized executors (neural and algorithmic). Each solves one task. High-class models are used selectively, where understanding of meaning is needed.</dd>
+
+    <dt>Sybil Resistance</dt>
+    <dd>Douceur 2002: impossible without external identification. In ALLcodeOCEAN: an economic stake (stake) at the entrance to the Ocean + reputation on the fragment citation graph, not on nodes.</dd>
 
     <dt>Throughput</dt>
-    <dd>Ocean throughput bounded by Amdahl's law: sequential coordination/verification sets parallelism ceiling.</dd>
+    <dd>The Ocean's throughput is limited by Amdahl's law: sequential coordination/verification sets the parallelism ceiling.</dd>
 
     <dt>Transparency</dt>
-    <dd>All fragments, their history, reputation, tests — open and verifiable. No black boxes.</dd>
+    <dd>All fragments, their history, reputation and tests are open and verifiable. No black boxes.</dd>
+
+    <dt>Trust Without Blockchain</dt>
+    <dd>Reputation through executable tests + lightweight consensus algorithms (PBFT, Raft). Not an energy-hungry PoW blockchain as a mandatory base: trust through tests, stake and reputation on the graph.</dd>
 
     <dt>Two-Date Chain</dt>
-    <dd>published 2026-10-26 on GitHub. Commit history = verifiable date proof.</dd>
-
-    <dt>Verifier Races</dt>
-    <dd>Risk: different verifiers give contradictory verdicts on same fragment; consensus fails. Mitigation: reference test suite, PBFT on results, appeal via re-verification.</dd>
+    <dd>Publication on 2026-10-26 on GitHub; the commit history is verifiable proof of the date.</dd>
 
     <dt>Version History / Sedimentary Layers</dt>
-    <dd>Change history in the Ocean does not get lost — it settles on the seabed as geological strata. Any version of any fragment available for audit and reuse.</dd>
+    <dd>The history of changes in the Ocean is not lost — it settles on the bottom like geological layers. Any version of any fragment is available for audit and reuse.</dd>
 
-    <dt>Waste / Zero Excess</dt>
-    <dd>Principle: don't drag along what you don't use. Basic unit of reuse = fragment of exactly needed size. Efficiency tests equal to correctness tests.</dd>
+    <dt>Working Materials (Draft)</dt>
+    <dd>The concept's working materials, published on 2026-10-26.</dd>
 
-    <dt>Working Materials / Drafts</dt>
-    <dd>Concept working materials published 2026-10-26</dd>
-
-    <dt>Zero Excess (Ноль лишнего)</dt>
-    <dd>Principle: don't carry what you don't use. Base unit of reuse = fragment of exactly needed size. Efficiency tests equal to correctness tests.</dd>
+    <dt>Zero Excess</dt>
+    <dd>A principle: do not drag along what is not used. The basic unit of reuse is a fragment of exactly the needed size. Efficiency tests are equal to correctness tests.</dd>
   </dl>
 </section>
 
@@ -192,7 +187,7 @@
     <span class="lbl">Other sections:</span>
     <a href="index.html">← To the home page</a>
     <a href="philosophy.html">Philosophy of the concept</a>
-    <a href="limits.html">Honest Limits</a>
+    <a href="limits.html">Limits and risks</a>
     <a href="scientists.html">For Scientists</a>
     <a href="specialists.html">For Specialists</a>
     <a href="for-everyone.html">For Everyone</a>
@@ -210,7 +205,7 @@
       &nbsp;·&nbsp;
       <a href="index.html">Home</a>
       &nbsp;·&nbsp;
-      <a href="scientists.html">Full manifesto</a>
+      <a href="scientists.html">For scientists</a>
       &nbsp;·&nbsp;
       <a href="philosophy.html">Philosophy</a>
       &nbsp;·&nbsp;
