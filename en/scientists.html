@@ -25,9 +25,19 @@
 
 <header class="site">
   <div class="container">
-    <nav class="breadcrumb" aria-label="Breadcrumb"><a href="index.html">← To the home page</a> · Level 3 — For Scientists · <a href="../ru/uchenym.html">RU</a></nav>
-    <a class="logo" href="index.html">ALLcodeOCEAN</a>
-    <div class="logo-sub">One ocean from a billion drops</div>
+    <h1 class="logo-h"><a class="logo" href="index.html">ALLcodeOCEAN</a></h1>
+    <div class="logo-sub">Ocean of All Code from a Billion Drops</div>
+    <nav class="main-nav" aria-label="Site sections">
+      <a href="index.html">Manifesto</a>
+      <a href="for-everyone.html">For Everyone</a>
+      <a href="specialists.html">For Specialists</a>
+      <a href="scientists.html" class="active" aria-current="page">For Scientists</a>
+      <a href="philosophy.html">Philosophy</a>
+      <a href="limits.html">Limits</a>
+      <a href="glossary.html">Glossary</a>
+      <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener">GitHub</a>
+      <a href="../index.html">RU</a>
+    </nav>
   </div>
 </header>
 
@@ -96,7 +106,7 @@
   <ul class="list">
     <li><strong>Kademlia [proven], O(log n).</strong> E5 (n=10⁹, k=20, 1000 lookups): mean 5.42 ± 0.83 hops, maximum 8 (the upper bound ceil log₂ n = 30).</li>
     <li><strong>Gossip push-pull [proven], O(log n)</strong> [Karp et al., FOCS 2000]. E6: n=10⁵ → 11.37 ± 0.48 rounds at log₃ n = 10.48 (ratio 1.08 and shrinking as n grows).</li>
-    <li><strong>CRDT [proven]</strong> [Shapiro et al., 2011]. A join-semilattice = a commutative idempotent monoid → eventual consistency. E7: 10000/10000 checks of commutativity/associativity/idempotence for GCounter, GSet, ORSet; 1000/1000 replica-convergence scenarios.</li>
+    <li><strong>CRDT [proven]</strong> [Shapiro et al., 2011]. A join-semilattice = a commutative idempotent monoid → eventual consistency. E7: 10,000/10,000 checks of commutativity/associativity/idempotence for GCounter, GSet, ORSet; 1000/1000 replica-convergence scenarios.</li>
     <li><strong>Amdahl [proven].</strong> E8: p=0.99 → S(1024)=91.2, the limit 100; the sequential part (coordination, verification) sets the ceiling of the speedup of distributed assembly.</li>
   </ul>
   <figure style="margin:18px 0;">
@@ -131,7 +141,6 @@
   <h2 class="section-title">"Zero excess": MDL and Kolmogorov complexity</h2>
   <p>The MDL principle [Rissanen, 1978; Grünwald, 2007]: L(D) = min_H [L(H) + L(D|H)] — a formalization of Occam's razor. The Kolmogorov complexity K(x) is <strong>uncomputable</strong>; any practical minimization is an approximation.</p>
   <p><strong>E10 (a):</strong> duplicate dead fragments have almost no effect on the zlib size (159 → 265 with k: 0 → 200); unique dead fragments grow both the raw and the zlib metric. <strong>(b):</strong> a GA with an MDL penalty shortens the assembly by a factor of 2.5 (150.9 → 60.9) while preserving correctness 1.0. <strong>(c):</strong> the Pearson correlation of the zlib length with correctness ≈ −0.04 — compression captures the structure of the content, not the "neededness"; the boundary of the MDL heuristic is fixed.</p>
-  <p class="dim">Reference (publication fact-check): packages 50.5% / dependencies 50.6%; ASCII token ranges — 25,000-50,000 / 96-97% / 60-80% / 200-500 / ~80%.</p>
   <figure style="margin:18px 0;">
     <img src="../assets/charts/mdl.svg" alt="E10: the assembly length with and without the MDL penalty" style="width:100%;max-width:720px;display:block;margin:0 auto;border-radius:12px;border:1px solid var(--border);">
     <figcaption style="text-align:center;color:var(--text-dim);font-size:0.85rem;margin-top:8px;">Fig. 6. The "zero excess" principle: an assembly 2.5 times shorter with no loss of correctness.</figcaption>
@@ -219,7 +228,7 @@
       &nbsp;·&nbsp;
       <a href="index.html">Home</a>
       &nbsp;·&nbsp;
-      <a href="scientists.html">Full manifesto</a>
+      <a href="scientists.html">For scientists</a>
       &nbsp;·&nbsp;
       <a href="philosophy.html">Philosophy</a>
       &nbsp;·&nbsp;

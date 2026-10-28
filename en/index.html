@@ -28,7 +28,7 @@
     <h1 class="logo-h"><a class="logo" href="index.html">ALLcodeOCEAN</a></h1>
     <div class="logo-sub">Ocean of All Code from a Billion Drops</div>
     <nav class="main-nav" aria-label="Page sections">
-      <a href="#about">About the Concept</a>
+      <a href="#about" class="active" aria-current="page">About the Concept</a>
       <a href="#problem">The Problem</a>
       <a href="#how">How It Works</a>
       <a href="#evidence">Evidence</a>
@@ -42,9 +42,10 @@
       <a href="../index.html">RU</a>
     </nav>
     <p class="cta-row" style="margin-top:16px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
-      <a class="cta-btn" href="scientists.html" style="display:inline-block;padding:10px 20px;border-radius:10px;background:linear-gradient(135deg,#38bdf8,#2dd4bf);color:#0a1622;font-weight:700;text-decoration:none;">📖 Full Manifesto (for scientists)</a>
-      <a class="cta-btn" href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/research/report.md" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">📄 Research report</a>
-      <a class="cta-btn" href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">🐙 Repository</a>
+      <a class="cta-btn" href="#about" style="display:inline-block;padding:10px 20px;border-radius:10px;background:linear-gradient(135deg,#38bdf8,#2dd4bf);color:#0a1622;font-weight:700;text-decoration:none;">📖 Full manifesto</a>
+      <a class="cta-btn" href="scientists.html" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">For scientists</a>
+      <a class="cta-btn" href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/research/report.md" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">Research report</a>
+      <a class="cta-btn" href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener" style="display:inline-block;padding:10px 20px;border-radius:10px;border:1px solid #1e3a56;color:#cfe7f3;text-decoration:none;">Repository</a>
     </p>
   </div>
 </header>
@@ -79,7 +80,7 @@
 
 <section id="about">
   <h2 class="section-title"><span class="num">1.</span>The Essence of the Concept</h2>
-  <p>For a long time, all the world's software lived on scattered <strong>islands</strong>. One island — a repository on GitHub, another — a package in NPM, a third — a closed corporate vault. The bridges between them are fragile dependencies. An error in one tiny package — and millions of systems worldwide collapse like houses of cards. You install a small program — and it invisibly drags gigabytes of unnecessary code you never knew about. No one asks permission, no one shows you how many resources — <strong>internet traffic, disk space, RAM, CPU time, battery energy, your own time</strong> — you will spend on the software you need. Not before installation, not during, not after. This information simply does not exist for the user. It is hidden somewhere in service logs, in a format no one reads except developers. As if it were a state secret. But in reality — you are simply <strong>being robbed</strong>. Your disk is stuffed with gigabytes of unused dependencies. Your traffic downloads updates, telemetry, ads, background processes. Your memory is clogged with processes idling in the background for years. Your CPU is heated by useless work, draining the battery, heating the room, feeding electricity meters. Your time is spent waiting for builds, downloads, updates, reboots. Your money pays for hardware running other people's tasks, for electricity, for traffic. And all this — <strong>without your knowledge, without your consent, without a single receipt</strong>. As if <strong>thieves, scammers, and irresponsible landlords</strong> walked into your apartment and decided: "This is our house, we'll decide everything for you." And you can't even evict them — you invited them in yourself by clicking "Install".</p>
+  <p>For a long time, all the world's software lived on scattered <strong>islands</strong>. One island — a repository on GitHub, another — a package in NPM, a third — a closed corporate vault. The bridges between them are fragile dependencies. An error in one tiny package — and millions of systems worldwide collapse like houses of cards. You install a small program — and it invisibly drags gigabytes of unnecessary code you never knew about. No one asks permission, no one shows you how many resources — <strong>internet traffic, disk space, RAM, CPU time, battery energy, your own time</strong> — you will spend on the software you need. Not before installation, not during, not after.</p>
 
   <p><strong>ALLcodeOCEAN offers a different reality: not an Archipelago, but a single Ocean.</strong></p>
 
@@ -201,7 +202,7 @@
 
   <p>And all this — <strong>without your knowledge, without your consent, without a single receipt</strong>.</p>
 
-  <p>As if <strong>thieves, scammers, and irresponsible landlords</strong> broke into your apartment and decided: "This is our house, we'll decide everything for you." And you can't even kick them out — you invited them in yourself by clicking "Install".</p>
+  <p>As if <strong>other people's processes with other people's interests</strong> had walked into your system uninvited, and you opened the door yourself by clicking "Install" — and now you can't kick them out.</p>
 
   <hr>
 
@@ -214,7 +215,7 @@
   — "I load the CPU at 2% in background".<br>
   — "I drain the battery by 5% per hour".</p>
 
-  <p><strong>And asks for consent:</strong> *"Do you agree to provide these resources?"*</p>
+  <p><strong>And asks for consent:</strong> <em>"Do you agree to provide these resources?"</em></p>
 
   <p><strong>Efficiency tests equal correctness tests.</strong> A program that gorges memory needlessly — fails selection. Waste is pruned automatically: MDL pressure cuts the excess just as ruthlessly as nature culls the unviable.</p>
 
@@ -236,13 +237,13 @@
   <p>And here is what happens when <strong>one</strong> piece breaks:</p>
 
   <h3>Story 1: A Tiny Function That Stopped the Internet (2016)</h3>
-  <p>A programmer wrote a <strong>function of 11 lines</strong>. It just added spaces to the left of text: turned <code>"5"</code> into <code>"00005"</code>. Called it <code>left-pad</code> ("left padding"). Seemed trivial. Turned out — <strong>thousands of the world's largest systems</strong> (Facebook, Netflix, Spotify, React, Babel, thousands of others) <strong>did not write it themselves</strong>, but plugged it in as a ready block. Then one day the programmer <strong>deleted</strong> his package. Just like that. <strong>Result:</strong> within minutes, projects stopped building worldwide. Sites went down. Build pipelines halted. The entire internet stopped because of a <strong>function any beginner could write in a minute</strong>.</p>
+  <p>A programmer wrote a <strong>function of 11 lines</strong>. It just added spaces to the left of text: it turned <code>"5"</code> into <code>"00005"</code>. He called it <code>left-pad</code> ("left padding"). Seemed trivial. It turned out that <strong>many projects in the npm ecosystem</strong> pulled the package in transitively (including one tied to the React/Babel toolchain). When the author <strong>unpublished the package</strong>, the registry policy kicked in: the dependency vanished, and builds fell over down the chain — not because "Netflix wrote on left-pad", but because the dependency graph was brittle. <strong>Result:</strong> within minutes, projects stopped building worldwide. Sites went down. Build pipelines halted. The entire internet stopped because of a <strong>function any beginner could write in a minute</strong>.</p>
 
   <h3>Story 2: The Hole Through Which Everything Was Stolen (2021 — Log4Shell)</h3>
   <p>There is a popular library for <strong>logging</strong> — recording events. It is used by <strong>half the servers in the world</strong> — banks, government sites, clouds, corporations. A hole was found: if a special string got into the log, the library <strong>executed it as a command</strong>. A hacker could type a malicious string into a "username" field — and the server would download and run the virus itself. <strong>No passwords needed. Just visit a site, type a malicious string into the login field — and the server surrenders itself.</strong> Patching took months. Millions of servers. Banks, hospitals, government sites, military systems — all vulnerable. Because of <strong>one logging library</strong>.</p>
 
   <h3>Story 3: Malware Inside Trust (2024 — xz utils)</h3>
-  <p>There is a utility <code>xz</code> — file compression. It is in <strong>every Linux</strong> — on servers, laptops, routers, containers. The developer spent years building reputation. Became a <strong>trusted maintainer</strong>. Then he planted a <strong>backdoor</strong> — a hidden door. Allowed <strong>anyone with the key to gain full control of the machine</strong> — invisibly, silently. That version made it into distributions: Fedora, Debian, Arch, Kali, Alpine. Into Docker images. Into CI/CD pipelines. Into production servers. Discovered by accident — an engineer noticed SSH connecting slightly slower. <strong>By 500 milliseconds.</strong> If not for that — the backdoor would have lived for years. In millions of machines. In banks, in the military, in the infrastructure of entire nations.</p>
+  <p>There is a utility <code>xz</code> — file compression. It is in <strong>almost every Linux</strong> — on servers, laptops, routers, containers. The developer spent years building reputation. Became a <strong>trusted maintainer</strong>. Then he planted a <strong>backdoor</strong> — a hidden door. Allowed <strong>anyone with the key to gain full control of the machine</strong> — invisibly, silently. That version made it into test and rolling builds of distributions (Fedora, Debian, Arch, Kali, Alpine) and into supply chains, but did not reach stable releases in time. It was discovered before a mass rollout to stable: an engineer noticed SSH taking slightly longer to connect (on the order of hundreds of milliseconds). The "years in banks and the military" scenario illustrates what could have happened with later discovery, not an established fact that all production systems were hit.</p>
 
   <p><strong>The point:</strong> Everyone depends on everyone. One piece of code — in millions of systems. No one verifies — we trust GitHub stars. No isolation — an error in one place is a disease of the whole organism. No immunity — monoculture: everyone uses the same code — everyone has the same weakness.</p>
 
@@ -278,7 +279,7 @@
 
   <h2>A Call: Not to War, But to Creation</h2>
 
-  <p>This is not a call to destroy the old. It is an offer of a <strong>new path</strong> — to abundance through collaboration, not competition for the scarce. Participation is voluntary. No one is forced to change anything. The old ways continue to work. ALLcodeOCEAN is just an additional path.</p>
+  <p>This is not a call to destroy the old. Participation is voluntary. No one is forced to change anything. The old ways continue to work. ALLcodeOCEAN is just an additional path.</p>
 
   <blockquote>The intent is simple: to offer humanity another path to abundance — through collaboration instead of competition for the scarce. If the idea proves useful — it already belongs to no one, and therefore to everyone.</blockquote>
 
@@ -286,17 +287,21 @@
 
   <h2>Where to Go Next</h2>
 
-  <p>This page is the shore. Three paths lead deeper:</p>
+  <p>This page is the <strong>general manifesto</strong> (a full overview of the concept, in order). Three paths deeper, by audience:</p>
 
-  <p><strong>For Everyone</strong> (<code>for-everyone.html</code>) — plain explanation, metaphors, life scenarios.<br>
-  <strong>For Specialists</strong> (<code>specialists.html</code>) — architecture (5 layers), workflow, stack, comparison, path to prototype.<br>
-  <strong>For Scientists</strong> (<code>scientists.html</code>) — formal model (Φ = α·Err + β·cost + γ·incomp), mathematics (E1–E10), honest limits, 47 sources.</p>
+  <div class="level-links" style="margin:1rem 0 1.25rem;">
+    <a href="for-everyone.html"><strong>For Everyone</strong> — plain explanation, metaphors, life scenarios</a>
+    <a href="specialists.html"><strong>For Specialists</strong> — architecture (5 layers), workflow, stack, path to prototype</a>
+    <a href="scientists.html"><strong>For Scientists</strong> — formal model, mathematics (E1–E10), honest limits</a>
+  </div>
 
-  <p>Additionally:<br>
-  <code>philosophy.html</code> — Ocean ontology, "zero excess" economy, swarm, lagoons, dialogue with the world, public domain.<br>
-  <code>limits.html</code> — honest limits (mathematical, heuristic, systemic risks).<br>
-  <code>glossary.html</code> — glossary of terms.<br>
-  Russian version in <code>../index.html</code>.</p>
+  <p class="dim" style="margin-bottom:.5rem;">Additionally:</p>
+  <div class="level-links">
+    <a href="philosophy.html">Philosophy — Ocean ontology, "zero excess", swarm, lagoons, CC0</a>
+    <a href="limits.html">Limits and risks — mathematics, heuristics, systemic risks</a>
+    <a href="glossary.html">Glossary of terms</a>
+    <a href="../index.html">Русская версия</a>
+  </div>
 
   <blockquote>ALLcodeOCEAN — Ocean of All Code from a Billion Drops.<br>
   Take exactly as much and exactly what you need — from a single interconnected environment.</blockquote>
@@ -311,9 +316,11 @@
     <p style="margin-top:10px;">
       <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN" target="_blank" rel="noopener">GitHub</a>
       &nbsp;·&nbsp;
+      <a href="#about">Full manifesto</a>
+      &nbsp;·&nbsp;
       <a href="https://github.com/DScoNOIZ/ALLcodeOCEAN/blob/main/research/report.md" target="_blank" rel="noopener">Research report</a>
       &nbsp;·&nbsp;
-      <a href="scientists.html">Full manifesto</a>
+      <a href="scientists.html">For scientists</a>
       &nbsp;·&nbsp;
       <a href="philosophy.html">Philosophy</a>
       &nbsp;·&nbsp;
